@@ -9,7 +9,6 @@ import calculadora.dominio.FraccionMixta;
 public class CalculadoraApp {
     public static void main(String[] args) {
         System.out.println();
-        //hola
         System.out.println(Calculadora.sumar(1,2,3,4));
         System.out.println(Calculadora.resta(5,4,2,7));
         System.out.println(Calculadora.multiplicacion(2,6,3,3));
