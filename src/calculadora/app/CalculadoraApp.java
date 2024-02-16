@@ -1,8 +1,8 @@
-package doo.calculadora.app;
+package calculadora.app;
 
-import doo.calculadora.dominio.Calculadora;
-import doo.calculadora.dominio.FraccionIrreductible;
-import doo.calculadora.dominio.FraccionMixta;
+import calculadora.dominio.Calculadora;
+import calculadora.dominio.FraccionIrreductible;
+import calculadora.dominio.FraccionMixta;
 
 
 

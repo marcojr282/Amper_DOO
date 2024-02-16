@@ -1,4 +1,4 @@
-package doo.calculadora.dominio;
+package calculadora.dominio;
 
 public class FraccionMixta {
 
