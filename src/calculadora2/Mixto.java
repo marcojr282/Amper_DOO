@@ -11,25 +11,19 @@ public class Mixto extends Fraccion {
         this.parteEntera = parteEntera;
     }
 
-    public static void convertirFraccion(int numerador, int denominador){
-        getparteEntera = numerador/denominador;
-        residuo = numerador % denominador;
-        System.out.println("Numero Mixto: " + parteEntera + " " + residuo + "/" + denominador);
+    public static Mixto crear(long parteEntera, long numerador, long denominador){
+        return new Mixto(numerador, denominador, parteEntera);
     }
 
     public long getParteEntera() {
         return parteEntera;
     }
 
-    public void setParteEntera(long parteEntera) {
+    private void setParteEntera(long parteEntera) {
         this.parteEntera = parteEntera;
     }
-
-    public long getResiduo() {
-        return residuo;
+    public String toString(){
+        return getParteEntera() + "->" + super.toString();
     }
 
-    public void setResiduo(long residuo) {
-        this.residuo = residuo;
-    }
 }
