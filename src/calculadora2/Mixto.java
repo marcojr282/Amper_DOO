@@ -4,8 +4,6 @@ public class Mixto extends Fraccion {
 
     private long parteEntera;
 
-    private long residuo;
-
     public Mixto(long numerador, long denominador, long parteEntera) {
         super(numerador, denominador);
         this.parteEntera = parteEntera;
@@ -19,11 +17,9 @@ public class Mixto extends Fraccion {
         return parteEntera;
     }
 
-    private void setParteEntera(long parteEntera) {
-        this.parteEntera = parteEntera;
-    }
+    @Override
     public String toString(){
-        return getParteEntera() + "->" + super.toString();
+        return getParteEntera() + " " + getNumerador() + "/" + getDenominador();
     }
-
 }
+
