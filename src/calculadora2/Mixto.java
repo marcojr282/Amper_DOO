@@ -4,14 +4,15 @@ public class Mixto extends Fraccion {
 
     private long parteEntera;
 
-    private long residuo;
-
     public Mixto(long numerador, long denominador, long parteEntera) {
         super(numerador, denominador);
         this.parteEntera = parteEntera;
     }
 
     public static Mixto crear(long parteEntera, long numerador, long denominador){
+        if (denominador == 0){
+            throw new RuntimeException("El denominador debe ser diferente de cero ");
+        }
         return new Mixto(numerador, denominador, parteEntera);
     }
 
@@ -19,11 +20,8 @@ public class Mixto extends Fraccion {
         return parteEntera;
     }
 
-    private void setParteEntera(long parteEntera) {
-        this.parteEntera = parteEntera;
-    }
+    @Override
     public String toString(){
-        return getParteEntera() + "->" + super.toString();
+        return getParteEntera() + " " + getNumerador() + "/" + getDenominador();
     }
-
 }
