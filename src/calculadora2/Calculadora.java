@@ -48,7 +48,6 @@ public class Calculadora {
         long numerador = fraccionUno.getNumerador() * fraccionDos.getDenominador();
         long denominador = fraccionUno.getDenominador() * fraccionDos.getNumerador();
 
-        System.out.println("total: " + Fraccion.crear(numerador,denominador));
 
         return Fraccion.crear(numerador, denominador);
     }
