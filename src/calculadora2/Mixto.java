@@ -10,8 +10,13 @@ public class Mixto extends Fraccion {
     }
 
     public static Mixto crear(long parteEntera, long numerador, long denominador){
+        if (denominador == 0){
+            throw new RuntimeException("El denominador debe ser diferente de cero ");
+        }
         return new Mixto(numerador, denominador, parteEntera);
     }
+
+
 
     public long getParteEntera() {
         return parteEntera;
@@ -22,4 +27,3 @@ public class Mixto extends Fraccion {
         return getParteEntera() + " " + getNumerador() + "/" + getDenominador();
     }
 }
-
